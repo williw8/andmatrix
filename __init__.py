@@ -134,7 +134,7 @@ class AndMatrixPlugin(object):
     '''
     Required
     '''
-    return 'Perform a natural join between two .csv files'
+    return 'Create a matrix indicating boolean AND relationship between two columns of the table'
 
   def set_path(self,v):
     self.path = v
