@@ -124,22 +124,22 @@ class AndMatrixPlugin(object):
     self.path = None
     self.parent_frame = parent_frame
  
-  def get_label(self):
+  def getLabel(self):
     '''
     Required
     '''
     return 'AND Matrix'
 
-  def get_description(self):
+  def getDescription(self):
     '''
     Required
     '''
     return 'Create a matrix indicating boolean AND relationship between two columns of the table'
 
-  def set_path(self,v):
+  def setPath(self,v):
     self.path = v
 
-  def do_action(self,table):
+  def doAction(self,table):
     '''
     Required
     '''
@@ -179,7 +179,7 @@ class AndMatrixPlugin(object):
       memw.save(path)
       self.parent_frame.addPage(path,delete_on_exit=True)
 
-def get_plugin(parent_frame):
+def getPlugin(parent_frame):
   return AndMatrixPlugin(parent_frame)
 
 
